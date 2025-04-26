@@ -38,7 +38,7 @@ export default function Home() {
               Maheswari Manoharan
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 max-w-[600px]">
-              Full Stack Developer specializing in modern web technologies
+              Lead Software Engineer specializing in modern web technologies
             </p>
             <div className="flex space-x-4">
               <Button asChild variant="outline" size="icon">
@@ -73,14 +73,12 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-lg text-gray-700">
-                I'm a passionate software developer with 5+ years of experience building modern web applications. 
-                I specialize in React, Next.js, Node.js, and TypeScript, with a strong focus on creating 
-                performant and scalable solutions.
+              Accomplished software engineer with experience in designing, developing and deploying robust, scalable backend solutions. Proficient in Python and other programming languages, with extensive expertise in developing Microservices and REST APIs using cloud-based event-driven architectures on AWS. Proven track record of enhancing system performance and reliability through solid backend engineering principles and best practices. Passionate about building efficient systems that drive business growth and operational excellence.
               </p>
               <div className="mt-6 space-y-2">
                 <h3 className="font-semibold text-gray-700">Technical Skills:</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["React", "Next.js", "TypeScript", "Node.js", "Python", "AWS", "Docker", "GraphQL"].map((skill) => (
+                  {["Technical Lead", "Python", "AWS", "Microservices", "REST APIs", "Event-Driven Architecture", "Cloud-Based Systems"].map((skill) => (
                     <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
                       {skill}
                     </span>
