@@ -1,0 +1,159 @@
+{
+  "editor": {
+    "formatOnSave": true,
+    "defaultFormatter": "prettier",
+    "tabSize": 2,
+    "insertSpaces": true,
+    "rulers": [100],
+    "wordWrap": "off",
+    "trimTrailingWhitespace": true,
+    "insertFinalNewline": true,
+    "detectIndentation": false,
+    "renderWhitespace": "selection",
+    "renderControlCharacters": false,
+    "renderLineHighlight": "all",
+    "cursorBlinking": "smooth",
+    "cursorSmoothCaretAnimation": "on",
+    "cursorStyle": "line",
+    "fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "fontSize": 14,
+    "lineHeight": 1.5,
+    "letterSpacing": 0
+  },
+  "typescript": {
+    "preferences": {
+      "importModuleSpecifier": "non-relative",
+      "quoteStyle": "single",
+      "useAliasesForRenames": true,
+      "organizeImports": true,
+      "autoImportFileExcludePatterns": ["**/node_modules/**"]
+    },
+    "suggest": {
+      "autoImports": true,
+      "completeFunctionCalls": true,
+      "includeCompletionsForModuleExports": true,
+      "includeCompletionsForImportStatements": true,
+      "includeAutomaticOptionalChainCompletions": true
+    },
+    "inlayHints": {
+      "enabled": true,
+      "parameterNames": "all",
+      "parameterTypes": true,
+      "variableTypes": true,
+      "propertyDeclarationTypes": true,
+      "functionLikeReturnTypes": true,
+      "enumMemberValues": true
+    }
+  },
+  "javascript": {
+    "preferences": {
+      "importModuleSpecifier": "non-relative",
+      "quoteStyle": "single",
+      "organizeImports": true
+    },
+    "suggest": {
+      "autoImports": true,
+      "completeFunctionCalls": true
+    }
+  },
+  "files": {
+    "associations": {
+      "*.tsx": "typescriptreact",
+      "*.ts": "typescript",
+      "*.jsx": "javascriptreact",
+      "*.js": "javascript",
+      "*.json": "json",
+      "*.md": "markdown"
+    },
+    "exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.next": true,
+      "**/.DS_Store": true,
+      "**/coverage": true,
+      "**/.vscode": true
+    },
+    "autoSave": "afterDelay",
+    "autoSaveDelay": 1000
+  },
+  "search": {
+    "exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.next": true,
+      "**/.git": true,
+      "**/coverage": true
+    },
+    "useIgnoreFiles": true,
+    "quickOpen": {
+      "includeSymbols": true
+    }
+  },
+  "terminal": {
+    "integrated": {
+      "shell": {
+        "osx": "/bin/zsh"
+      },
+      "fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+      "fontSize": 14,
+      "lineHeight": 1.5,
+      "cursorBlinking": true,
+      "cursorStyle": "line",
+      "scrollback": 10000
+    }
+  },
+  "workbench": {
+    "colorTheme": "Default Dark+",
+    "iconTheme": "vs-seti",
+    "startupEditor": "welcomePage",
+    "editorAssociations": {
+      "*.md": "default"
+    },
+    "tree": {
+      "indent": 16,
+      "renderIndentGuides": true
+    }
+  },
+  "git": {
+    "enabled": true,
+    "autofetch": true,
+    "confirmSync": false,
+    "enableSmartCommit": true,
+    "suggestSmartCommit": true,
+    "autoStash": true
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "bradlc.vscode-tailwindcss",
+      "ms-vscode.vscode-typescript-next",
+      "formulahendry.auto-rename-tag",
+      "christian-kohler.path-intellisense",
+      "naumovs.color-highlight",
+      "streetsidesoftware.code-spell-checker"
+    ]
+  },
+  "nextjs": {
+    "linting": {
+      "enabled": true,
+      "rules": {
+        "react-hooks/exhaustive-deps": "warn",
+        "no-console": "warn",
+        "no-unused-vars": "error",
+        "@next/next/no-html-link-for-pages": "error",
+        "@next/next/no-img-element": "warn"
+      }
+    },
+    "formatting": {
+      "singleQuote": true,
+      "trailingComma": "es5",
+      "printWidth": 100,
+      "tabWidth": 2,
+      "semi": true,
+      "bracketSpacing": true,
+      "arrowParens": "avoid"
+    }
+  }
+} 
