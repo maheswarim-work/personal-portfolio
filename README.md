@@ -49,3 +49,8 @@ The application will be available at [http://localhost:3000](http://localhost:30
 - Tailwind CSS
 - Radix UI components
 - Various other UI and utility libraries
+
+## Screenshots
+
+![Page 1 - Intro](images/Page-1-Intro.png)
+![Page 2 - About Me](images/Page-2-About-Me.png)
