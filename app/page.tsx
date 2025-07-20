@@ -38,26 +38,26 @@ export default function Home() {
               Maheswari Manoharan
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 max-w-[600px]">
-              Lead Software Engineer specializing in modern web technologies
+               Software Engineering Manager Specializing In Modern Web Technologies Powered With Artificial Intelligence
             </p>
             <div className="flex space-x-4">
               <Button asChild variant="outline" size="icon">
-                <Link href="https://github.com">
+                <Link href="https://github.com/maheswarim-work">
                   <Github className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="icon">
-                <Link href="https://linkedin.com">
+                <Link href="https://www.linkedin.com/in/maheswarimanoharan/">
                   <Linkedin className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="icon">
-                <Link href="https://twitter.com">
+                <Link href="https://x.com/MaheswariM2037">
                   <Twitter className="h-5 w-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="icon">
-                <Link href="mailto:contact@example.com">
+                <Link href="mailto:maheswarim.work@gmail.com">
                   <Mail className="h-5 w-5" />
                 </Link>
               </Button>
@@ -73,12 +73,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-lg text-gray-700">
-              Accomplished software engineer with experience in designing, developing and deploying robust, scalable backend solutions. Proficient in Python and other programming languages, with extensive expertise in developing Microservices and REST APIs using cloud-based event-driven architectures on AWS. Proven track record of enhancing system performance and reliability through solid backend engineering principles and best practices. Passionate about building efficient systems that drive business growth and operational excellence.
+              As a technology professional with a Master’s in Computer Science, I bring 12+ years of experience across industries such as commercial/specialty insurance, automotive and employment background verification. I enjoy solving real-world problems by designing event-driven microservices, serverless applications, and APIs that are scalable, reliable, and easy to maintain.
+Over the years, I’ve reported into both software development and SRE (Site Reliability Engineering) organizations, giving me a well-rounded perspective on system design, product delivery, and platform reliability. I’m now transitioning into an Engineering Manager role, combining architectural decision-making, hands-on coding, team leadership, and strong collaboration with product and business partners in strategic analytics.
+I work extensively with Java (12 years) and Python (3+ years), and have led initiatives across the full API lifecycle from requirements gathering and design to development, testing, deployment, and production support. I bring 9 years of experience working in the cloud with AWS and am currently deepening my knowledge of Microsoft Azure.
+My infrastructure-as-code expertise includes 5 years with Terraform and experience with AWS CloudFormation. I also leverage GitHub Actions (2 years), AWS CodePipeline (3 years), Jenkins (5 years) to automate CI/CD pipelines, enforce testing standards, and accelerate release cycles.
+On the data side, I’m currently working with SQL technologies including Databricks and Snowflake.
               </p>
               <div className="mt-6 space-y-2">
                 <h3 className="font-semibold text-gray-700">Technical Skills:</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Technical Lead", "Python", "AWS", "Microservices", "REST APIs", "Event-Driven Architecture", "Cloud-Based Systems"].map((skill) => (
+                  {["Technical Lead", "Python", "AWS", "Azure", "Microservices", "REST APIs", "Event-Driven Architecture", "Cloud-Based Systems", "Terraform", "GitHub Actions", "Databricks", "Snowflake"].map((skill) => (
                     <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
                       {skill}
                     </span>
