@@ -2,8 +2,7 @@
   "routes": [
     {
       "route": "/*",
-      "serve": "/index.html",
-      "statusCode": 200
+      "rewrite": "/index.html"
     }
   ],
   "navigationFallback": {
@@ -11,11 +10,5 @@
   },
   "platform": {
     "apiRuntime": "node:18"
-  },
-  "buildProperties": {
-    "appLocation": "/",
-    "outputLocation": ".next",
-    "buildCommand": "npm run build",
-    "installCommand": "npm ci"
   }
 } 

@@ -2,6 +2,7 @@
 Personal Portfolio developed using Cursor & Bolt
 
 <!-- Deployment test - 2025-07-20 -->
+<!-- Build configuration updated - 2025-07-20 -->
 
 ## Prerequisites
 - Node.js (version 14 or higher)
