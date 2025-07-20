@@ -50,6 +50,65 @@ The application will be available at [http://localhost:3000](http://localhost:30
 - Radix UI components
 - Various other UI and utility libraries
 
+## Deployment
+
+### Azure Static Web Apps Deployment
+
+This project is configured for automated deployment to Azure Static Web Apps using GitHub Actions.
+
+#### Prerequisites
+- Azure account
+- GitHub repository
+
+#### Setup Instructions
+
+1. **Create Azure Static Web App**:
+   - Go to [Azure Portal](https://portal.azure.com)
+   - Search for "Static Web Apps"
+   - Click "Create"
+   - Fill in the details:
+     - **Name**: `your-portfolio-app`
+     - **Region**: Choose closest to you
+     - **Build Details**:
+       - **Build Preset**: Custom
+       - **App location**: `/`
+       - **Output location**: `.next`
+
+2. **Configure GitHub Secrets**:
+   - Go to your GitHub repository
+   - Navigate to Settings → Secrets and variables → Actions
+   - Add new repository secret:
+     - **Name**: `AZURE_STATIC_WEB_APPS_API_TOKEN`
+     - **Value**: Copy the deployment token from Azure Static Web App
+
+3. **Deploy**:
+   - Push your code to the main branch
+   - GitHub Actions will automatically build and deploy
+   - Your app will be available at: `https://your-portfolio-app.azurestaticapps.net`
+
+#### Manual Deployment
+
+If you prefer manual deployment:
+
+```bash
+# Install Azure CLI
+brew install azure-cli
+
+# Login to Azure
+az login
+
+# Deploy
+npm run build
+az staticwebapp create \
+  --name your-portfolio-app \
+  --resource-group your-resource-group \
+  --source . \
+  --location "East US" \
+  --branch main \
+  --app-location "/" \
+  --output-location ".next"
+```
+
 ## Screenshots
 
 ![Page 1 - Intro](images/Page-1-Intro.png)
