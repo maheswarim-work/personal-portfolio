@@ -35,4 +35,5 @@ jobs:
         app_location: "/"
         output_location: ".next"
         skip_app_build: true
-        deployment_environment: production 
+        deployment_environment: production
+        skip_deploy_on_missing_secrets: true 

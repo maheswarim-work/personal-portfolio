@@ -60,7 +60,26 @@ This project is configured for automated deployment to Azure Static Web Apps usi
 - Azure account
 - GitHub repository
 
-#### Setup Instructions
+#### Quick Setup (Recommended)
+
+Use the automated setup script:
+
+```bash
+# Make sure you have Azure CLI installed
+brew install azure-cli
+
+# Run the setup script
+./scripts/setup-azure.sh
+```
+
+The script will:
+- ✅ Check Azure CLI installation
+- ✅ Guide you through login
+- ✅ Create Azure Static Web App
+- ✅ Get the deployment token
+- ✅ Provide next steps
+
+#### Manual Setup
 
 1. **Create Azure Static Web App**:
    - Go to [Azure Portal](https://portal.azure.com)
@@ -108,6 +127,35 @@ az staticwebapp create \
   --app-location "/" \
   --output-location ".next"
 ```
+
+#### Troubleshooting
+
+**Common Issues:**
+
+1. **"deployment_token was not provided"**
+   - Solution: Add the `AZURE_STATIC_WEB_APPS_API_TOKEN` secret to your GitHub repository
+   - Go to Settings → Secrets and variables → Actions
+   - Add the deployment token from Azure Static Web App
+
+2. **Build fails**
+   - Check the build logs in GitHub Actions
+   - Ensure all dependencies are in `package.json`
+   - Verify Node.js version compatibility
+
+3. **Deployment fails**
+   - Check Azure Static Web App logs in Azure Portal
+   - Verify the output location is correct (`.next`)
+   - Ensure the app location is set to `/`
+
+4. **App not accessible**
+   - Check if the Static Web App is running in Azure Portal
+   - Verify the URL format: `https://your-app-name.azurestaticapps.net`
+   - Check for any custom domain configuration issues
+
+**Getting Help:**
+- [Azure Static Web Apps Documentation](https://docs.microsoft.com/en-us/azure/static-web-apps/)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [Next.js Deployment Guide](https://nextjs.org/docs/deployment)
 
 ## Screenshots
 
