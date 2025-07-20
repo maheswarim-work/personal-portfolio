@@ -11,5 +11,11 @@
   },
   "platform": {
     "apiRuntime": "node:18"
+  },
+  "buildProperties": {
+    "appLocation": "/",
+    "outputLocation": ".next",
+    "buildCommand": "npm run build",
+    "installCommand": "npm ci"
   }
 } 
