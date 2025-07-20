@@ -44,7 +44,7 @@ az staticwebapp create \
     --location $LOCATION \
     --branch main \
     --app-location "/" \
-    --output-location ".next" \
+    --output-location "out" \
     --login-with-github
 
 echo ""
