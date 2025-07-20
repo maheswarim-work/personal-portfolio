@@ -7,6 +7,14 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    'bg-gradient-to-r',
+    'from-pink-300',
+    'to-pink-600',
+    'bg-white/80',
+    'text-gray-700',
+    'bg-gray-100'
+  ],
   theme: {
     extend: {
       backgroundImage: {
