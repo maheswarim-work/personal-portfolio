@@ -1,5 +1,5 @@
-# nextjs-bolt-poc
-Personal Portfolio developed using Cursor & Bolt
+# Maheswari Manoharan - Personal Portfolio developed using Cursor, Bolt and Claude
+
 
 <!-- Deployment test - 2025-07-20 -->
 <!-- Build configuration updated - 2025-07-20 -->

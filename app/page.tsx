@@ -85,17 +85,31 @@ export default function Home() {
           <h2 className="text-3xl font-bold tracking-tighter mb-8 text-gray-700">About Me</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-lg text-gray-700">
-              As a technology professional with a Master’s in Computer Science, I bring 12+ years of experience across industries such as commercial/specialty insurance, automotive and employment background verification. I enjoy solving real-world problems by designing event-driven microservices, serverless applications, and APIs that are scalable, reliable, and easy to maintain.
-Over the years, I’ve reported into both software development and SRE (Site Reliability Engineering) organizations, giving me a well-rounded perspective on system design, product delivery, and platform reliability. I’m now transitioning into an Engineering Manager role, combining architectural decision-making, hands-on coding, team leadership, and strong collaboration with product and business partners in strategic analytics.
-I work extensively with Java (12 years) and Python (3+ years), and have led initiatives across the full API lifecycle from requirements gathering and design to development, testing, deployment, and production support. I bring 9 years of experience working in the cloud with AWS and am currently deepening my knowledge of Microsoft Azure.
-My infrastructure-as-code expertise includes 5 years with Terraform and experience with AWS CloudFormation. I also leverage GitHub Actions (2 years), AWS CodePipeline (3 years), Jenkins (5 years) to automate CI/CD pipelines, enforce testing standards, and accelerate release cycles.
-On the data side, I’m currently working with SQL technologies including Databricks and Snowflake.
-              </p>
+              <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  As a technology professional with a Master's in Computer Science, I bring <span className="font-semibold text-pink-600">12+ years of experience</span> across industries such as commercial/specialty insurance, automotive and employment background verification. I enjoy solving real-world problems by designing event-driven microservices, serverless applications, and APIs that are scalable, reliable, and easy to maintain.
+                </p>
+                
+                <p>
+                  Over the years, I've reported into both <span className="font-semibold text-pink-600">Software Development</span> and <span className="font-semibold text-pink-600">SRE (Site Reliability Engineering)</span> organizations, giving me a well-rounded perspective on system design, product delivery, and platform reliability. I'm now transitioning into an <span className="font-semibold text-pink-600">Engineering Manager</span> role, combining architectural decision-making, hands-on coding, team leadership, and strong collaboration with product and business partners in strategic analytics.
+                </p>
+                
+                <p>
+                  I work extensively with <span className="font-semibold text-pink-600">Java (12 years)</span> and <span className="font-semibold text-pink-600">Python (3+ years)</span>, and have led initiatives across the full API lifecycle from requirements gathering and design to development, testing, deployment, and production support. I bring <span className="font-semibold text-pink-600">9 years of experience</span> working in the cloud with AWS and am currently deepening my knowledge of Microsoft Azure.
+                </p>
+                
+                <p>
+                  My infrastructure-as-code expertise includes <span className="font-semibold text-pink-600">5 years with Terraform</span> and experience with AWS CloudFormation. I also leverage <span className="font-semibold text-pink-600">GitHub Actions (2 years)</span>, <span className="font-semibold text-pink-600">AWS CodePipeline (3 years)</span>, <span className="font-semibold text-pink-600">Jenkins (5 years)</span> to automate CI/CD pipelines, enforce testing standards, and accelerate release cycles.
+                </p>
+                
+                <p>
+                  On the data side, I'm currently working with SQL technologies including <span className="font-semibold text-pink-600">Databricks</span> and <span className="font-semibold text-pink-600">Snowflake</span>.
+                </p>
+              </div>
               <div className="mt-6 space-y-2">
                 <h3 className="font-semibold text-gray-700">Technical Skills:</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Technical Lead", "Python", "AWS", "Azure", "Microservices", "REST APIs", "Event-Driven Architecture", "Cloud-Based Systems", "Terraform", "GitHub Actions", "Databricks", "Snowflake"].map((skill) => (
+                  {["Technical Lead", "Python", "Java", "AWS", "Azure", "Microservices", "REST APIs", "Event-Driven Architecture", "Cloud-Based Systems", "Terraform", "GitHub Actions", "Databricks", "Snowflake"].map((skill) => (
                     <span 
                       key={skill} 
                       className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
