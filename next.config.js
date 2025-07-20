@@ -5,7 +5,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  // Force cache busting for CSS and all assets - trigger deploy
+  // Force cache busting for CSS and all assets - refresh www
   generateBuildId: async () => {
     return 'build-' + Date.now()
   },
