@@ -1,5 +1,5 @@
 # nextjs-bolt-poc
-NextJS POC using bolt
+Personal Portfolio developed using Cursor & Bolt
 
 ## Prerequisites
 - Node.js (version 14 or higher)
