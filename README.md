@@ -1,6 +1,8 @@
 # nextjs-bolt-poc
 Personal Portfolio developed using Cursor & Bolt
 
+<!-- Deployment test - 2025-07-20 -->
+
 ## Prerequisites
 - Node.js (version 14 or higher)
 - npm or yarn package manager
