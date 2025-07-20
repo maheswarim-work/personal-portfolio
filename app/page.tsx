@@ -30,7 +30,13 @@ export default function Home() {
   return (
     <main className="min-h-screen text-gray-700">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-pink-300 to-pink-600">
+      <section 
+        className="relative h-screen flex items-center justify-center bg-gradient-to-r from-pink-300 to-pink-600"
+        style={{
+          background: 'linear-gradient(to right, #f9a8d4, #db2777)',
+          minHeight: '100vh'
+        }}
+      >
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent" />
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center text-center space-y-4">
@@ -67,7 +73,14 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-white/80 backdrop-blur-sm">
+      <section 
+        className="py-20 bg-white/80 backdrop-blur-sm"
+        style={{
+          backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(4px)',
+          padding: '80px 0'
+        }}
+      >
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter mb-8 text-gray-700">About Me</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -83,7 +96,17 @@ On the data side, I’m currently working with SQL technologies including Databr
                 <h3 className="font-semibold text-gray-700">Technical Skills:</h3>
                 <div className="flex flex-wrap gap-2">
                   {["Technical Lead", "Python", "AWS", "Azure", "Microservices", "REST APIs", "Event-Driven Architecture", "Cloud-Based Systems", "Terraform", "GitHub Actions", "Databricks", "Snowflake"].map((skill) => (
-                    <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+                    <span 
+                      key={skill} 
+                      className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                      style={{
+                        backgroundColor: '#f3f4f6',
+                        color: '#374151',
+                        padding: '4px 12px',
+                        borderRadius: '9999px',
+                        fontSize: '14px'
+                      }}
+                    >
                       {skill}
                     </span>
                   ))}
@@ -133,7 +156,14 @@ On the data side, I’m currently working with SQL technologies including Databr
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-white/80 backdrop-blur-sm">
+      <section 
+        className="py-20 bg-white/80 backdrop-blur-sm"
+        style={{
+          backgroundColor: 'rgba(255, 255, 255, 0.8)',
+          backdropFilter: 'blur(4px)',
+          padding: '80px 0'
+        }}
+      >
         <div className="container px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter mb-4 text-gray-700">Let's Connect</h2>
           <p className="text-lg text-gray-700 mb-8 max-w-[600px] mx-auto">
