@@ -5,6 +5,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  // Force cache busting for CSS
+  generateBuildId: async () => {
+    return 'build-' + Date.now()
+  },
 };
 
 module.exports = nextConfig;
